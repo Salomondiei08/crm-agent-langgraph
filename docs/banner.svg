@@ -1,0 +1,43 @@
+<svg width="1600" height="420" viewBox="0 0 1600 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">LangGraph Teaching Lab</title>
+  <desc id="desc">Interactive support triage graph for learning LangGraph</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1600" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#071411"/>
+      <stop offset="0.52" stop-color="#102B22"/>
+      <stop offset="1" stop-color="#071411"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="800" y1="72" x2="800" y2="350" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#73F6B0"/>
+      <stop offset="1" stop-color="#27C985"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" stroke="#6FF0AD" stroke-opacity=".055"/></pattern>
+  </defs>
+  <rect width="1600" height="420" rx="28" fill="url(#background)"/>
+  <rect width="1600" height="420" rx="28" fill="url(#grid)"/>
+  <circle cx="1430" cy="-10" r="250" fill="#36D994" fill-opacity=".08"/>
+  <circle cx="1430" cy="-10" r="170" fill="#36D994" fill-opacity=".06"/>
+  <path d="M60 350C330 250 420 390 680 320C930 252 1040 90 1270 155C1390 189 1470 230 1540 170" stroke="#48DF9A" stroke-opacity=".12" stroke-width="2"/>
+  <text x="82" y="88" fill="#73F6B0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" font-weight="700" letter-spacing="4">INTERACTIVE LESSON 01</text>
+  <text x="78" y="168" fill="#F0FFF7" font-family="Inter, Arial, sans-serif" font-size="64" font-weight="800">LangGraph</text>
+  <text x="78" y="232" fill="#73F6B0" font-family="Inter, Arial, sans-serif" font-size="64" font-weight="800">Teaching Lab</text>
+  <text x="82" y="282" fill="#A7C4B6" font-family="Inter, Arial, sans-serif" font-size="22">Understand agents as state, nodes, routes and human decisions.</text>
+  <g filter="url(#glow)">
+    <circle cx="1160" cy="126" r="7" fill="#73F6B0"/><circle cx="1300" cy="126" r="7" fill="#73F6B0"/><circle cx="1440" cy="126" r="7" fill="#FFC857"/>
+  </g>
+  <path d="M1172 126H1288M1312 126H1428" stroke="#5CBF90" stroke-width="3" stroke-dasharray="8 8"/>
+  <path d="M1160 126V268M1300 126V268M1440 126V268" stroke="#356D57" stroke-width="2" stroke-dasharray="5 8"/>
+  <g>
+    <rect x="1084" y="82" width="152" height="88" rx="14" fill="#15372B" stroke="#4DCA8A" stroke-width="2"/>
+    <text x="1160" y="120" text-anchor="middle" fill="#73F6B0" font-family="ui-monospace, monospace" font-size="12" font-weight="700">START</text><text x="1160" y="145" text-anchor="middle" fill="#E5F7ED" font-family="Inter, Arial" font-size="14" font-weight="700">ticket</text>
+    <rect x="1224" y="82" width="152" height="88" rx="14" fill="#15372B" stroke="#4DCA8A" stroke-width="2"/>
+    <text x="1300" y="120" text-anchor="middle" fill="#73F6B0" font-family="ui-monospace, monospace" font-size="12" font-weight="700">classify</text><text x="1300" y="145" text-anchor="middle" fill="#E5F7ED" font-family="Inter, Arial" font-size="14" font-weight="700">route state</text>
+    <rect x="1364" y="82" width="152" height="88" rx="14" fill="#3B3218" stroke="#FFC857" stroke-width="2"/>
+    <text x="1440" y="120" text-anchor="middle" fill="#FFC857" font-family="ui-monospace, monospace" font-size="12" font-weight="700">human_review</text><text x="1440" y="145" text-anchor="middle" fill="#FFF2C9" font-family="Inter, Arial" font-size="14" font-weight="700">interrupt()</text>
+  </g>
+  <rect x="1084" y="268" width="432" height="64" rx="14" fill="#0B2019" stroke="#254E3F"/>
+  <text x="1300" y="307" text-anchor="middle" fill="#A7C4B6" font-family="ui-monospace, monospace" font-size="15">state → checkpoint → resume</text>
+</svg>

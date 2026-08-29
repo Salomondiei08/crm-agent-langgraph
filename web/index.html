@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LangGraph — Support Triage Lab</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="shell">
+    <header><div class="eyebrow">INTERACTIVE LESSON 01</div><h1>Support Triage <span>Lab</span></h1><p>Watch a LangGraph agent think in steps, route decisions, and pause for a human.</p></header>
+    <section class="lesson-grid">
+      <div class="panel graph-panel"><div class="panel-title"><span>LIVE GRAPH</span><b id="status" class="pill ready">READY</b></div>
+        <div class="graph" id="graph">
+          <div class="node" data-node="classify"><i>01</i><strong>classify</strong><small>detect category</small></div><div class="arrow">↓</div>
+          <div class="node" data-node="retrieve_context"><i>02</i><strong>retrieve_context</strong><small>load policy</small></div><div class="arrow">↓</div>
+          <div class="node" data-node="draft_reply"><i>03</i><strong>draft_reply</strong><small>write answer</small></div>
+          <div class="split"><div class="branch"><div class="arrow">↙</div><div class="node human" data-node="human_review"><i>04</i><strong>human_review</strong><small>interrupt()</small></div></div><div class="branch"><div class="arrow">↘</div><div class="node" data-node="finalize"><i>04</i><strong>finalize</strong><small>finish run</small></div></div></div>
+          <div class="legend"><span class="dot green"></span> executed <span class="dot amber"></span> waiting for you</div>
+        </div>
+      </div>
+      <div class="side"><section class="panel"><div class="panel-title"><span>TRY A TICKET</span><span class="thread">thread: <b id="thread">browser-demo</b></span></div>
+        <textarea id="ticket">I was charged twice for my subscription</textarea><div class="examples"><button data-example="I was charged twice for my subscription">Billing</button><button data-example="The mobile app shows an error">Technical</button><button data-example="How do I change my profile photo?">Account</button></div><button class="run" id="run">▶ Run the graph</button>
+      </section><section class="panel"><div class="panel-title"><span>STATE INSPECTOR</span><span id="category" class="category">—</span></div><div id="reply" class="reply">Run the graph to inspect its state.</div><div id="events" class="events"></div><div id="approval" class="approval hidden"><b>Human-in-the-loop</b><p>The graph is paused. Should this reply be approved?</p><button id="approve">Approve</button><button id="reject" class="reject">Reject</button></div></section></div>
+    </section>
+    <footer>State → nodes → edges → checkpoint → resume <a href="https://docs.langchain.com/oss/python/langgraph/interrupts" target="_blank">Learn the concept ↗</a></footer>
+  </main><script src="/app.js"></script>
+</body></html>
